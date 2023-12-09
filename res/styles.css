@@ -1,0 +1,38 @@
+/* Tags */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+main{
+    background-color: hsl(216, 50%, 16%);
+    width: 25vw;
+    height: 70vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+/* Classes */
+.img-box{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    /* overflow: hidden; */
+}
+.img-box>img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* Queries */
+@media screen and (max-width: 376px) {
+    
+}
