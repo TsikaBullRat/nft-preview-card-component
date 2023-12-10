@@ -19,18 +19,79 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: left;
+    position: relative;
 }
+main>h2{
+    margin-left: -100px;
+    color: #fff;
+    cursor: pointer;
+}
+main>h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+main>p{
+    width: 80%;
+    margin: 0;
+}
+main>div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+hr{
+    border-color: hsl(215, 51%, 70%);
+    border-width: 0.5px;
+    height: 1px;
+    width: 80%;
+}
+
 /* Classes */
 .img-box{
     width: 300px;
     height: 300px;
     border-radius: 15px;
     margin-top: 20px;
-    /* overflow: hidden; */
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    background-color: hsla(215, 52%, 70%, 0.614);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.img-box:hover> .cover{
+    opacity: 1;
 }
 .img-box>img{
     width: 100%;
     border-radius: 15px;
+}
+.diff{
+    color: hsl(178, 100%, 50%);
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.profile>img{
+    width: 30px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: -50px;
+}
+.diff2 {
+    color: #fff;
 }
 /* Queries */
 @media screen and (max-width: 376px) {
